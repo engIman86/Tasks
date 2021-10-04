@@ -1,3 +1,29 @@
+//First task  
+void main() {
+ List <int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+ a.forEach((i)=>{ if (i>5)   print('the element $i is bigger than 5')});
+  
+
+
+  // Second task 
+   
+  List <int> c = [5, 10, 15, 20, 25];
+  List getFirstandLastNumber (List<int>llist)
+  {
+    
+   List <int> b=[llist.first,llist.last]; 
+    return b;        
+  } 
+   
+  print(getFirstandLastNumber(c));
+  
+   
+   }
+
+
+
+ //Third  task
+  
 class Person {
   String name;
   int age ;
@@ -43,12 +69,8 @@ double totalAndAvarage(List<double> rate){
   print( ' The total of ratings is $total, The avarge of ratings is $avarage');
   
   return (total) ; return( avarage);
-  
-  
+   
 }
-
-    
-  
 
 void main(){
   var firstResturant=Restaurant( name:'Filce',cuisine:'Westren Food',ratings:[2.5] );
@@ -59,33 +81,4 @@ void main(){
 
    }
 
-//task four using old way
 
-class Restaurant {
-  const Restaurant({
-    required this.name,
-    required this.cuisine,
-    required this.ratings,
-  });
-  final String name;
-  final String cuisine;
-  final List<double> ratings;
-}
-
-
-void main(){
-  var r=Restaurant( name:'toto',cuisine:'coco',ratings:[2.5] );
-  //print('printing ${r.cuisine},${r.name},${r.ratings}');
-  r.ratings.add(5.6);
-  r.ratings.add(2.3);
-  var total=0.0;
-  for(var i in r.ratings){ total= total + i;   }
-  print('The total of ratings is $total'); 
-  var avarage=0.0;
- avarage=total / r.ratings.length;
-  
-  print('The avarge of ratings is $avarage');
-   
- 
-  
-}
