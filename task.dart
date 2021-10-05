@@ -72,6 +72,59 @@ double totalAndAvarage(List<double> rate){
    
 }
 
+
+////task five 
+
+
+abstract class Shape {
+  double area();
+  double p();
+   printValues();
+  
+   
+    
+    
+  }
+
+
+class Square extends Shape {
+  Square(this.side);
+  final double side;
+ 
+ @override
+  double area() => side * side;
+  double p() => 4 * side ;
+   printValues(){
+     print('The area of this square is ${area()} and the perimeter is ${p()}');
+     
+   }
+  
+ 
+
+  
+}
+class Circle extends Shape {
+  Circle(this.radius);
+  final double radius;
+
+  @override
+  double area() => 2.17 * radius * radius;
+  double p() => 2 * 2.17 * radius; 
+  printValues(){
+     print('The area of this circle is ${area()} and the perimeter is ${p()}');
+   }
+}
+void main(){
+  var s1= Square(5.0);
+  var c1= Circle(5.0);
+  
+  
+  List shapes=[s1,c1];
+  shapes.forEach((i)=> i.printValues());
+  
+  
+}
+
 void main(){
   var firstResturant=Restaurant( name:'Filce',cuisine:'Westren Food',ratings:[2.5] );
   firstResturant.ratings.add(5.6);
