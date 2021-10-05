@@ -72,6 +72,16 @@ double totalAndAvarage(List<double> rate){
    
 }
 
+void main(){
+  var firstResturant=Restaurant( name:'Filce',cuisine:'Westren Food',ratings:[2.5] );
+  firstResturant.ratings.add(5.6);
+  firstResturant.ratings.add(2.3);
+  
+  totalAndAvarage(firstResturant.ratings);
+
+   }
+
+
 
 ////task five 
 
@@ -125,13 +135,5 @@ void main(){
   
 }
 
-void main(){
-  var firstResturant=Restaurant( name:'Filce',cuisine:'Westren Food',ratings:[2.5] );
-  firstResturant.ratings.add(5.6);
-  firstResturant.ratings.add(2.3);
-  
-  totalAndAvarage(firstResturant.ratings);
-
-   }
 
 
